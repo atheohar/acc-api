@@ -75,9 +75,10 @@ html {
  */
 
 body {
-    font-size: 0.9em; /* Setting 12px as base size */
+    font-size: 0.8em; /* Setting 12px as base size */
     margin: 0;
-    color: #fff;
+    color: #6D6E78;
+    background-color: #eee;
 }
 
 div.clear{clear: both;}
@@ -126,16 +127,22 @@ h1 {
     letter-spacing: -0.05em;
     text-transform: uppercase;
     margin: 0.5em 0 0;
-    color: #fff;
+    color: #818AB7;
 }
 h2 {
     font-family: quicksandregular;
     letter-spacing: -0.05em;
+    text-transform: uppercase;
     font-size: 1.8rem;
     margin: 0;
     padding-bottom: 0.5em;
-    color: #fff;
+    color: #818AB7;
 }
+
+
+ div.module h2 {
+            color: #6D6E78;
+        }
 
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
@@ -313,7 +320,7 @@ textarea {
     font-family: inherit; /* 1 */
     font-size: 100%; /* 2 */
     margin: 0; /* 3 */
-    background-color: #6F7CB7;
+    background-color: #818AB7;
     border: none;
     margin-bottom: 1.5em;
     color: white;
@@ -332,13 +339,13 @@ input {
 button {
     border: none;
     color: #fff;
-    
+    margin-top: 20px;
     text-transform: uppercase;
     width: 8em;
 }
 
 
-
+hr{ display: none;}
 
 
 /**
