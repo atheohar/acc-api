@@ -27,7 +27,6 @@
     body, form {
         margin: 0;
         padding: 0;
-        background-color: #6275B7;
     }
 
     a {
@@ -68,8 +67,27 @@
 
 */
 
+    .main-wrapper{
+      width: 800px;
+      margin:0 auto;
+
+    }
+
+
+    .main-wrapper > h1{
+      text-align: center;
+      font-size: 3.6em;
+      margin-bottom:0.35em;
+    }
+
     .module {
         padding: 10px 20px;
+        margin-bottom: 20px;
+        background-color: #C1C3D4;
+        
+        border:2px #B5B7C7 solid;
+        border-radius:4px;
+        width: 80%;
     }
 
         .module .title {
@@ -81,11 +99,21 @@
             margin-right: 1.5em;
         }
 
+         .module h2 {
+          border-bottom: thin #6F7CB7 solid;
+
+        }
+
 
     .style-guide {
         border: 3px rgba(0,0,0,0.2) solid;
         padding: 30px;
+        color: #000;
     }
+
+        h1,h2 {
+            color: #000;
+        }
 
         .text-box {
             margin: 0 0 30px 0;
@@ -98,7 +126,7 @@
         }
 
             .swatch-box {
-                color: #FFF;
+                color: #000;
                 display: inline-block;
                 height: 100px;
                 margin: 0 20px 20px 0;
