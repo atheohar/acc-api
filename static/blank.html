@@ -12,6 +12,8 @@
 
         <link rel="stylesheet" type="text/css" href="/css/normalizr.css">
         <link rel="stylesheet" type="text/css" href="/css/blank.css">
+        <link rel="stylesheet" type="text/css" href="/fonts/quicksand.css">
+        <link rel="stylesheet" type="text/css" href="/fonts/fira.css">
 
     </head>
     <body>
@@ -26,44 +28,52 @@
                 <a href="#">Click me!</a>
             </div>
             <ul class="color-swatch">
-                <li class="swatch-box alpha">R115 G150 B0</li>
-                <li class="swatch-box beta">R108 G111 B112</li>
-                <li class="swatch-box gamma">R68 G105 B125</li>
+                <li class="swatch-box alpha">153,153,153</li>
+                <li class="swatch-box beta">0, 132, 219</li>
+                <li class="swatch-box gamma">249, 218, 72</li>
             </ul>
         </div>
 
 
         <div>
-            <h1>Acc API</h1>
+            <h1>Kiddie-Cash</h1>
             <hr />
             <div>
-                <div>
+                <div class="module">
                     <h2>Create account</h2>
                     <form class="js-create-account">
+                      <div class="wrapper"> 
                         <label for="parent">Parent Name:</label>
                         <input type="text" name="parent_name" />
-
+                      </div>
+                      <div class="wrapper">
                         <label for="child">Child Name:</label>
                         <input type="text" name="child_name" />
-
+                      </div>
                         <button>Create</button>
                     </form>
+                    <div class="clear"><!-- --></div>
                 </div>
-                <div>
+                <div class="module">
                     <h2>Update account</h2>
                     <form class="js-update-account">
+                      <div class="wrapper"> 
                         <labelfor="id">Account:</label>
                         <select class="js-accounts-select js-accounts-select-update" name="id"></select>
-
+                      </div>
+                      <div class="wrapper"> 
                         <label for="loan_rate">Loan rate:</label>
                         <input type="text" name="loan_rate" />
-
+                      </div>
+                     <div class="wrapper"> 
                         <label for="saving_rate">Saving rate:</label>
                         <input type="text" name="saving_rate" />
-
+                     </div>
+                     <div class="wrapper"> 
                         <label for="pocket_money_amount">Pocket money amount:</label>
                         <input type="text" name="pocket_money_amount" />
-
+                     </div>
+                     <div class="wrapper"> 
                         <label for="pocket_money_day">Pocket money day:</label>
                         <select name="pocket_money_day">
                             <option value="0">Sunday</option>
@@ -74,29 +84,33 @@
                             <option value="5">Friday</option>
                             <option value="6">Saturday</option>
                         </select>
-
+                     </div>
+                     <div class="wrapper"> 
                         <label for="goal_name">Goal Name:</label>
                         <input type="text" name="goal_name" />
-
+                    </div>
+                     <div class="wrapper"> 
                         <label for="goal_value">Goal value:</label>
                         <input type="text" name="goal_value" />
-
+                    </div>
+ <div class="wrapper"> 
                         <label for="goal_type">Goal type:</label>
                         <input type="text" name="goal_type" />
-
+</div>
                         <button>Update</button>
-
+                    <div class="clear"><!-- --></div>
                     </form>
-                </div>
-                <div>
+               
+                <div  class="module">
                     <h2>Get account info</h2>
                     <form class="js-get-account">
-
+                </div>
+                <div class="wrapper"> 
                         <label for="id">Account:</label>
                         <select class="js-accounts-select js-accounts-select-update" name="id"></select>
-
+                </div>
                         <button class="btn btn-primary">Get</button>
-
+                    <div class="clear"><!-- --></div>
                     </form>
                     <div class="js-info-wrapper">
 
@@ -106,57 +120,67 @@
 
             <hr />
             <div>
-                <div>
+                <div class="module">
                     <h2>Create Transaction</h2>
                     <form class="js-create-transaction">
+                      <div class="wrapper"> 
                         <label for="id">Account:</label>
                         <select class="js-accounts-select" name="id"></select>
-
+                    </div>
+                     <div class="wrapper"> 
                         <label for="amount">Amount:</label>
                         <input type="text" name="amount" />
-
+                    </div>
+                     <div class="wrapper"> 
                         <label for="description">Description:</label>
                         <input type="text" name="description" />
-
+                    </div>
+                     <div class="wrapper"> 
                         <label for="deposit">Deposit</label>
                         <input type="radio" name="type" value="deposit" />
-
+                    </div>
+                     <div class="wrapper"> 
                         <label for="deposit">Withdrawal</label>
                         <input type="radio" name="type" value="withdrawal" />
-
+                     </div>
                         <button>Save</button>
-
+                    <div class="clear"><!-- --></div>
                     </form>
                 </div>
-                <div>
+                <div  class="module">
                     <h2>View Transactions</h2>
                     <form class="js-view-transactions">
-
+                     <div class="wrapper"> 
                         <label for="id">Account:</label>
 
                         <select class="js-accounts-select" name="id"></select>
-
+                     </div>
                         <h3>Filter</h3>
+                     <div class="wrapper"> 
                         <label for="type">Either</label>
                         <input type="radio" name="type" value="either" checked="checked" />
-
+                     </div>
+                     <div class="wrapper"> 
                         <label for="type">Deposit</label>
                         <input type="radio" name="type" value="deposit" />
-
+                     </div>
+                     <div class="wrapper"> 
                         <label for="type">Withdrawal</label>
                         <input type="radio" name="type" value="withdrawal" />
-
+                    </div>
+                     <div class="wrapper"> 
                         <label for="date_start">Date Start:</label>
                         <input type="text" name="date_start" class="js-datepicker" />
-
+                    </div>
+                     <div class="wrapper"> 
                         <label for="date_end">Date End:</label>
                         <input type="text" name="date_end" class="js-datepicker" />
-
+                     </div>
                         <button>View</button>
-
+                     <div class="clear"><!-- --></div>
                     </form>
                 </div>
-                <div>
+                <div  class="module">
                     <h2>Increment Account</h2>
                     <span>Fast forward this account's time by specified days</span>
                     <form class="js-increment-account">

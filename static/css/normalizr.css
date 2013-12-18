@@ -64,8 +64,8 @@ template {
  */
 
 html {
-    /* font-size: 100%;  Setting all browsers to 16px */
-    font-family: sans-serif; /* 1 */
+    font-size: 100%;  /*Setting all browsers to 16px*/
+    font-family: fira_sans_otregular; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -75,10 +75,12 @@ html {
  */
 
 body {
-    /*  font-size: 0.756em; Setting 12px as base size */
+    font-size: 0.9em; /* Setting 12px as base size */
     margin: 0;
+    color: #fff;
 }
 
+div.clear{clear: both;}
 /* ==========================================================================
    Links
    ========================================================================== */
@@ -118,8 +120,21 @@ a:hover {
  */
 
 h1 {
-    font-size: 2em;
+    font-size: 3.2em;
     margin: 0.67em 0;
+    font-family: quicksandregular;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    margin: 0.5em 0 0;
+    color: #fff;
+}
+h2 {
+    font-family: quicksandregular;
+    letter-spacing: -0.05em;
+    font-size: 1.8rem;
+    margin: 0;
+    padding-bottom: 0.5em;
+    color: #fff;
 }
 
 /**
@@ -163,7 +178,7 @@ hr {
 
 mark {
     background: #ff0;
-    color: #000;
+    color: #fff;
 }
 
 /**
@@ -258,6 +273,13 @@ figure {
    Forms
    ========================================================================== */
 
+form {
+
+}
+
+label {
+    display: block
+}
 /**
  * Define consistent border, margin, and padding.
  */
@@ -291,6 +313,10 @@ textarea {
     font-family: inherit; /* 1 */
     font-size: 100%; /* 2 */
     margin: 0; /* 3 */
+    background-color: #6F7CB7;
+    border: none;
+    margin-bottom: 1.5em;
+    color: white;
 }
 
 /**
@@ -303,6 +329,18 @@ input {
     line-height: normal;
 }
 
+button {
+    border: none;
+    color: #fff;
+    
+    text-transform: uppercase;
+    width: 8em;
+}
+
+
+
+
+
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
@@ -310,7 +348,7 @@ input {
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
 
-button,
+
 select {
     text-transform: none;
 }

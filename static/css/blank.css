@@ -27,14 +27,17 @@
     body, form {
         margin: 0;
         padding: 0;
+        background-color: #6275B7;
     }
 
     a {
-        color: #039;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
     }
 
     a:hover {
-        color: #03F;
+        color: rgb(249, 218, 72);
     }
 
 
@@ -73,6 +76,12 @@
             margin: 0 0 20px 0;
         }
 
+        .module .wrapper {
+            float: left;
+            margin-right: 1.5em;
+        }
+
+
     .style-guide {
         border: 3px rgba(0,0,0,0.2) solid;
         padding: 30px;
@@ -110,15 +119,17 @@
     }
 
     .alpha {
-        background-color: rgb(115,150,1);
+        background-color: #6275B7;
     }
 
     .beta {
-        background-color: rgb(108, 111, 112);
+        background-color: #6F7CB7;
+        
     }
 
     .gamma {
-        background-color: rgb(68, 105, 125);
+        background-color: #ccc;
+        
     }
 
 
